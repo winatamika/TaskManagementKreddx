@@ -51,12 +51,12 @@ This will start the Laravel development server, and you can access the applicati
 
 The Task Management System provides the following API endpoints:
 
-    GET /tasks: Retrieve all tasks.
+    GET /allTasks: Retrieve all tasks.
     GET /tasks/{id}: Retrieve a specific task.
     POST /tasks: Create a new task.
-    PUT /tasks/{id}: Update a task.
+    POST /tasks/{id}: Update a task.
     DELETE /tasks/{id}: Delete a task.
-    GET /tasks/filter: Filter tasks based on criteria such as status, priority, and due date.
+    GET /tasksfilter/: Filter tasks based on criteria such as status, priority, and due date.
 
 Refer to the source code and the TasksController for more details on the available API endpoints and their usage.
 
