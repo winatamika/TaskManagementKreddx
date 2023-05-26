@@ -64,13 +64,13 @@ Refer to the source code and the TasksController for more details on the availab
 
 You can simply use this script to manipulate the API 
 
-bash BashControl.sh add "Write some code" "Implement the auth module" "21/08/2023" "high" "Mika"
-bash BashControl.sh list
-bash BashControl.sh expiring-today
-bash BashControl.sh status "pending"
-bash BashControl.sh done 3
-bash BashControl.sh update 10 --description "xx" --priority "low"
-bash BashControl.sh delete 3
+    bash BashControl.sh add "Write some code" "Implement the auth module" "21/08/2023" "high" "Mika"
+    bash BashControl.sh list
+    bash BashControl.sh expiring-today
+    bash BashControl.sh status "pending"
+    bash BashControl.sh done 3
+    bash BashControl.sh update 10 --description "xx" --priority "low"
+    bash BashControl.sh delete 3
 
 
 
