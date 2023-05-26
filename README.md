@@ -24,3 +24,61 @@ Before running the Task Management System, ensure that you have the following pr
 - Composer
 - MySQL
 
+
+## Installation
+
+Clone the repository:
+
+   git clone https://github.com/winatamika/TaskManagementKreddx.git
+   
+
+1. Install the dependencies:
+    composer install
+2. Configure the database settings in the .env file.
+3. Run the database migrations:
+    php artisan migrate
+4. (Optional) Seed the database with sample data:
+    php artisan db:seed --class=TasksTableSeeder
+    
+##Usage
+
+To start the Task Management System, run the following command:
+    php artisan serve
+
+This will start the Laravel development server, and you can access the application in your browser at http://localhost:8000.
+
+##API Endpoints
+
+The Task Management System provides the following API endpoints:
+
+    GET /tasks: Retrieve all tasks.
+    GET /tasks/{id}: Retrieve a specific task.
+    POST /tasks: Create a new task.
+    PUT /tasks/{id}: Update a task.
+    DELETE /tasks/{id}: Delete a task.
+    GET /tasks/filter: Filter tasks based on criteria such as status, priority, and due date.
+
+Refer to the source code and the TasksController for more details on the available API endpoints and their usage.
+
+##Interaction with Bash
+
+You can simply use this script to manipulate the API 
+
+bash BashControl.sh add "Write some code" "Implement the auth module" "21/08/2023" "high" "Mika"
+bash BashControl.sh list
+bash BashControl.sh expiring-today
+bash BashControl.sh status "pending"
+bash BashControl.sh done 3
+bash BashControl.sh update 10 --description "xx" --priority "low"
+bash BashControl.sh delete 3
+
+
+
+##Contributing
+
+Contributions to the Task Management System are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+
+##License
+
+This project is licensed under the MIT License.
